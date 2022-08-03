@@ -1,7 +1,7 @@
-import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Scanner;
+//import java.sql.SQLOutput;
+//import java.util.ArrayList;
+//import java.util.Iterator;
+import java.util.*;
 class Details{
 
     int id;
@@ -46,9 +46,10 @@ class Details{
                     Iterator itr = users.iterator();
                     while (itr.hasNext()) {
                         Details x = (Details) itr.next();
-                        if (x.id ==n)
+                        if (x.id ==n){
                             itr.remove();
                         break;
+                        }
                     }
                     System.out.println("Enter n value");
                     n=sc.nextInt();
