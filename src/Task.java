@@ -84,6 +84,38 @@ class Details{
             }
         }
         //System.out.println(users);
+            int id;
+    String name;
+    String companyName;
+    Details(int id,String name,String companyName){
+        this.id=id;
+        this.name=name;
+        this.companyName=companyName;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Details details = (Details) o;
+        return id == details.id && Objects.equals(name, details.name) && Objects.equals(companyName, details.companyName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, companyName);
+    }
+
+    @Override
+    public String toString() {
+        return "Details{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", companyName='" + companyName + '\'' +
+                '}';
+    }
+
 
     }
 
