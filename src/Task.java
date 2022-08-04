@@ -84,14 +84,7 @@ class Details{
             }
         }
         //System.out.println(users);
-            int id;
-    String name;
-    String companyName;
-    Details(int id,String name,String companyName){
-        this.id=id;
-        this.name=name;
-        this.companyName=companyName;
-    }
+  
 
 
     @Override
